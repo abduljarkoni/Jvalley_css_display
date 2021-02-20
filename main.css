@@ -1,0 +1,81 @@
+/* css risetter agar mudah di atur */
+
+/* agar dapat di scroll secara halus */
+html {
+  scroll-behavior: smooth;
+}
+
+/* mengatur setiap elemen agar bordernya box */
+/* agar mudah mengatur margin dan padding pada saat layouting */
+* {
+  box-sizing: border-box;
+}
+
+/* kita set body agar ukurannya tetap dan tidak mempunyai padding terhadap  */
+/* child nya */
+/* min-height 100vh untuk mendapatkan difaultnya 100vh tinggi layarnya */
+/* height auto adalah untuk memanjang otomatis ketika ada komponen yang melebihi */
+/* dari 100vh */
+/* overflow x hidden agar user tidak bisa scrol dari kiri kekanan pada halaman web */
+/* margin dan padding nol agar tidak ada padding dan margin  */
+/* secara default nya dalam suatu website */
+
+body {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: wheat;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  width: 80%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  border: 1px solid black;
+  background-color: rgb(7, 6, 5);
+}
+
+.box {
+  width: 150px;
+  height: 50px;
+}
+
+.box1 {
+  background-color: orange;
+}
+
+.box2 {
+  background-color: pink;
+}
+
+.box3 {
+  background-color: lightblue;
+}
+
+.box4 {
+  background-color: green;
+}
